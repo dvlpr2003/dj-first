@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+header {
+    border: 1px solid rgb(178, 178, 178);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+#sign-up-login{
+    margin-right: 2rem;
+    font-family: "Arsenal", sans-serif;
+    margin-left: auto;
+    justify-self: end;
+    display: flex;
+    gap: 3rem;
+
+}
+#sign-up-login a {
+    text-decoration: none;
+}
+#sign-up-login a:hover{
+    color: blue;
+    cursor: pointer;
+}
