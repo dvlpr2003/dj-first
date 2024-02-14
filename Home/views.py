@@ -1,16 +1,17 @@
 from django.shortcuts import render
 from django.views import View
 from .utils import redirect
-# Create your views here.
+from .form import signUpForm
 
-
-class MyHome(View):
-    def get(self,request):
+def Home(request):
         
-        return render(request,"Home/home.html",{
-            "fun1":redirect
-        })
+    return render(request,"Home/home.html",{
+        "fun1":redirect
+    })
     
 
 def SingUp(request):
-    return render(request,"Home/signup.html")
+    newForm = signUpForm()
+    return render(request,"Home/signup.html",{
+        "form":newForm
+    })
