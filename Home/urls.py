@@ -1,7 +1,7 @@
 from django.urls import *
 from .views import*
 urlpatterns = [
-    path("",Home),
-    path("signup",SingUp,name="sync"),
+    path("signup",SignUp.as_view(),name="onreq"),
+    path("login",LogIn)
 
 ]
